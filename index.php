@@ -1,3 +1,5 @@
+<?php include_once 'model/connection.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +24,7 @@
     <br>
     <br>
     <br>
+
     <div class="container" id="diarista-cards">
         <div class="row row-cols-1 row-cols-xxl-6 row-cols-xl-5 row-cols-lg-5 row-cols-md-3 row-cols-sm-2">
             <!-- g-2 g-lg-3 g-xl-4 -->
@@ -82,16 +85,13 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
     </div>
 
     <!-- Formulario de login -->
     <?php require_once 'view/formulario_login.php'; ?>
+    <!-- Formulario de registro -->
+    <?php require_once 'view/formulario_registro.php'; ?>
 
     <br><br>
 
@@ -109,12 +109,8 @@
                 </p>
             </section>
         </div>
-
-
     </div>
 
-    <!-- Formulario de registro -->
-    <?php require_once 'view/formulario_registro.php'; ?>
 
 
     <!-- RODAPÉ -->
