@@ -18,15 +18,16 @@
 
     <div class=" form-group">
         <label for="emailLogin">Email</label>
-        Email<input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email" required>
+        <input type="email" class="form-control" id="emailLogin" name="emailLogin" placeholder="Introduza seu email"
+            required>
     </div>
 
     <!-- A confirmacao da senha é controlado por uma script javascript -->
     <div class="row">
         <div class="form-group col">
             <label for="password">Senha</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" onchange="validarSenha();"
-                required>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                onchange="validarSenha();" required>
         </div>
 
         <div class="form-group col">
@@ -39,12 +40,12 @@
 
     <div class="form-group">
         <label for="nif">Contacto</label>
-        <input type="digit" class="form-control" id="contacto" placeholder="84 0000 000" required>
+        <input type="digit" class="form-control" id="contacto" name="contacto" placeholder="84 0000 000" required>
     </div>
 
     <div class="form-group">
         <label for="morada">Morada</label>
-        <input type="text" class="form-control" id="morada" placeholder="Introduza o seu bairro">
+        <input type="text" class="form-control" id="morada" name="morada" placeholder="Introduza o seu bairro">
     </div>
 
     <!-- <label for="especialidade">Escolha sua especialidade(s)</label> -->
