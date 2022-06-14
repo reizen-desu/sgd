@@ -9,24 +9,26 @@
 
             <div class="modal-body">
                 <p class="text-secondary">Preencha os campos abaixo para entrar</p>
-                <form>
-                    <div class="form-group">
-                        <label for="emailLogin">Email</label>
-                        <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email"
+
+                <form id="loginForm" action="controller/loginController.php" method="POST">
+
+                    <div class="form-floating mb-2">
+                        <input type="email" class="form-control" id="emailLogin" placeholder="name@example.com"
                             required>
+                        <label for="emailLogin">Email address</label>
                     </div>
-                    <div class="form-group">
-                        <label for="passwordLogin">Password</label>
-                        <input type="password" class="form-control" id="passwordLogin" placeholder="Password" required>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="passwordLogin" name="passwordLogin"
+                            placeholder="Password" required>
+                        <label for="passwordLogin">Senha</label>
                     </div>
-                    <!-- <br> -->
-                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    <!-- <button type="submit" class="btn btn-primary">Entrar</button> -->
                 </form>
 
             </div> <!-- modal body -->
             <div class="modal-footer">
                 <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button class="btn btn-primary">Entrar</button>
+                <button type="submit" form="loginForm" class="btn btn-primary">Entrar</button>
             </div>
 
         </div> <!-- modal content -->
