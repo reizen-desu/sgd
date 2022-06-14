@@ -13,13 +13,13 @@
                 <form id="loginForm" action="controller/loginController.php" method="POST">
 
                     <div class="form-floating mb-2">
-                        <input type="email" class="form-control" id="emailLogin" placeholder="name@example.com"
-                            required>
+                        <input type="email" name="email" class="form-control" id="emailLogin"
+                            placeholder="name@example.com" required>
                         <label for="emailLogin">Email address</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="passwordLogin" name="passwordLogin"
-                            placeholder="Password" required>
+                        <input type="password" name="password" class="form-control" id="passwordLogin"
+                            name="passwordLogin" placeholder="Password" required>
                         <label for="passwordLogin">Senha</label>
                     </div>
                     <!-- <button type="submit" class="btn btn-primary">Entrar</button> -->
