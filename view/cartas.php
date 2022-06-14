@@ -3,7 +3,7 @@
         <!-- g-2 g-lg-3 g-xl-4 -->
         <div class="col">
             <div class="card">
-                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <img src="assets/img/logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-title text-center">Ana Paula, F, 35 anos</h6>
                     <div class="card-text fst-italic">Estou sempre pronta pra trabalhar, ligue e vamos falar!
@@ -22,7 +22,7 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <img src="assets/img/logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-title text-center">Anabela Macuacua, F, 26 anos</h6>
                     <div class="card-text fst-italic">Estou sempre pronta pra trabalhar, ligue e vamos falar!
@@ -41,7 +41,7 @@
         </div>
         <div class="col">
             <div class="card">
-                <img src="img/logo.jpg" class="card-img-top" alt="...">
+                <img src="assets/img/logo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h6 class="card-title text-center">Sergio Nhanala, M, 20 anos</h6>
                     <div class="card-text fst-italic">Faço trabalhos de limpeza profundos (produtos químicos)
