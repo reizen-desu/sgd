@@ -2,9 +2,8 @@
 
 <!-- Testes -->
 <?php
-session_start();
 
-$_SESSION['is_logged'] = "0";
+$_SESSION['is_logged'] = "1";
 $_SESSION['user'] = "diarista";
 
 ?>

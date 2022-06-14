@@ -3,8 +3,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modal-title">Login</>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
@@ -12,11 +12,12 @@
                 <form>
                     <div class="form-group">
                         <label for="emailLogin">Email</label>
-                        <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email">
+                        <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="passwordLogin">Password</label>
-                        <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+                        <input type="password" class="form-control" id="passwordLogin" placeholder="Password" required>
                     </div>
                     <!-- <br> -->
                     <!-- <button type="submit" class="btn btn-primary">Submit</button> -->

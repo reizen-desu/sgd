@@ -1,15 +1,32 @@
 <!-- FORMULARIO DE REGISTO (Modal) -->
 <section class="bg-light modal fade" id="register" aria-labelledby="modal-title">
-    <div class="modal-dialog">
+
+    <!-- Definições do modal vão ao lado do "modal-dialog"
+    Os tamanho do modal é pelo "modal-sm|lg|xl"-->
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modal-title">Registrar</br>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="modal-title">Registrar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
+                <p>O formulário abaixo se destina para diaristas, para entrar como visitante </p>
                 <p class="text-secondary">Preencha os campos abaixo para se registrar</p>
                 <form>
+                    <div class="row">
+
+                        <div class="form-group col">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Introduza seu nome">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="apelido">Apelido</label>
+                            <input type="text" class="form-control" id="apelido" placeholder="Introduza seu apelido">
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label for="emailLogin">Email</label>
                         <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email">
@@ -19,16 +36,6 @@
                         <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
                     </div>
 
-                    <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Introduza seu nome">
-
-                    </div>
-
-                    <div class="form-group">
-                        <label for="apelido">Apelido</label>
-                        <input type="text" class="form-control" id="apelido" placeholder="Introduza seu apelido">
-                    </div>
 
                     <div class="form-group">
                         <label for="nif">Contacto</label>
@@ -41,7 +48,7 @@
                     </div>
 
                     <!-- <label for="especialidade">Escolha sua especialidade(s)</label> -->
-                    <class="form-group">
+                    <div class="form-group">
                         <fieldset>
                             <legend class="text-secondary">Especialidade</legend>
                             <div class="form-check">
@@ -69,35 +76,31 @@
                                 </label>
                             </div>
                         </fieldset>
+                    </div>
 
-                        <br>
-                        <div class="form-check">
-                            <label for="publicar">Publicar seu perfil na pagina?</label>
-                            </br>
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="publicar" id="publicar" value="sim"
-                                    checked>
-                                Sim
-                            </label>
-                            </br>
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="publicar" id="publicar" value="nao">
-                                Não
-                            </label>
-                        </div>
+                    <br>
+                    <div class="form-check">
+                        <label for="publicar">Publicar seu perfil na pagina?</label>
+                        </br>
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="publicar" id="publicar" value="sim"
+                                checked>
+                            Sim
+                        </label>
+                        </br>
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="publicar" id="publicar" value="nao">
+                            Não
+                        </label>
+                    </div>
+                </form>
+            </div> <!-- modal body -->
+
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button class="btn btn-primary">Registrar nova conta</button>
             </div>
 
-
-
-            </form>
-
-
-        </div> <!-- modal body -->
-        <div class="modal-footer">
-            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button class="btn btn-primary">Registrar nova conta</button>
-        </div>
-
-    </div> <!-- modal content -->
+        </div> <!-- modal content -->
     </div> <!-- modal dialog -->
 </section>
