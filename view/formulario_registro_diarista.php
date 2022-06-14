@@ -18,7 +18,7 @@
 
     <div class=" form-group">
         <label for="emailLogin">Email</label>
-        <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email" required>
+        Email<input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email" required>
     </div>
 
     <!-- A confirmacao da senha é controlado por uma script javascript -->
