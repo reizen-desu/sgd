@@ -5,28 +5,41 @@
 
         <div class="form-group col">
             <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Introduza seu nome">
+            <input type="text" class="form-control" id="nome" placeholder="Introduza seu nome" pattern="[^0-9]+"
+                required>
         </div>
 
         <div class="form-group col">
             <label for="apelido">Apelido</label>
-            <input type="text" class="form-control" id="apelido" placeholder="Introduza seu apelido">
+            <input type="text" class="form-control" id="apelido" placeholder="Introduza seu apelido" pattern="[^0-9]+"
+                required>
         </div>
     </div>
 
-    <div class="form-group">
+    <div class=" form-group">
         <label for="emailLogin">Email</label>
-        <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email">
+        <input type="email" class="form-control" id="emailLogin" placeholder="Introduza seu email" required>
     </div>
-    <div class="form-group">
-        <label for="passwordLogin">Password</label>
-        <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+
+    <!-- A confirmacao da senha é controlado por uma script javascript -->
+    <div class="row">
+        <div class="form-group col">
+            <label for="password">Senha</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" onchange="validarSenha();"
+                required>
+        </div>
+
+        <div class="form-group col">
+            <label for="confirm_password">Confirmar senha</label>
+            <input type="password" class="form-control" id="confirm_password" placeholder="Confirme a senha"
+                onkeyup="validarSenha();" required>
+        </div>
     </div>
 
 
     <div class="form-group">
         <label for="nif">Contacto</label>
-        <input type="digit" class="form-control" id="contacto" placeholder="84 0000 000">
+        <input type="digit" class="form-control" id="contacto" placeholder="84 0000 000" required>
     </div>
 
     <div class="form-group">
