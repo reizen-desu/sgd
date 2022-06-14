@@ -13,7 +13,7 @@
             <div class="modal-body">
                 <p>O formulário abaixo se destina para diaristas, para entrar como visitante </p>
                 <p class="text-secondary">Preencha os campos abaixo para se registrar</p>
-                <form>
+                <form action="controller/registerController.php" method="POST">
                     <div class="row">
 
                         <div class="form-group col">
@@ -78,6 +78,7 @@
                         </fieldset>
                     </div>
 
+                    <!-- add user-type=diarista to send to php code -->
                     <br>
                     <div class="form-check">
                         <label for="publicar">Publicar seu perfil na pagina?</label>
@@ -93,12 +94,15 @@
                             Não
                         </label>
                     </div>
+                    <hr>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="btn btn-primary btn-block">Registrar nova conta</button>
+                    </div>
                 </form>
             </div> <!-- modal body -->
 
             <div class="modal-footer">
-                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button class="btn btn-primary">Registrar nova conta</button>
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
 
         </div> <!-- modal content -->
