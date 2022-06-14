@@ -62,8 +62,9 @@
     </footer>
     <!-- FIM DO RODAPÉ -->
 
+    <script src="assets/js/functions.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- <script src="js/bootstrap/bootstrap.bundle.min.js"></script> -->
     <script>
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
