@@ -11,3 +11,8 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
