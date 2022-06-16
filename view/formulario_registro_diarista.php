@@ -46,6 +46,17 @@
         </div>
     </div>
 
+    <br>
+
+    <div class="row">
+        <label for="data_nascimento" class="col-3 col-form-label">Data de nascimento</label>
+        <div class="col-5">
+            <div class="input-group date">
+                <input type="date" class="form-control" name="data_nascimento" id="data_nascimento">
+
+            </div>
+        </div>
+    </div>
 
     <div class="form-group">
         <label for="nif">Contacto</label>
@@ -59,27 +70,29 @@
 
     <!-- <label for="especialidade">Escolha sua especialidade(s)</label> -->
     <div class="form-group">
-        <fieldset>
-            <legend class="text-secondary">Especialidade</legend>
-            <div class="form-check">
+        <fieldset class="border p-2">
+            <legend class="float-none w-auto p-0 text-sm-center small">Especialidade</legend>
+            <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade1">
-                <label class="form-check-label" for="especialidade1">
+                <label class="form-check-label" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Limpeza consiste em varrer os ambientes, tirar o pó e sujeiras dos imóveis, fazer limpeza de vidros, pisos, paredes e dentre outras várias."
+                    for="especialidade1">
                     Limpeza
                 </label>
             </div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade2">
                 <label class="form-check-label" for="especialidade2">
                     Cozinheira
                 </label>
             </div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade3">
                 <label class="form-check-label" for="especialidade3">
                     Babá
                 </label>
             </div>
-            <div class="form-check">
+            <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade4">
                 <label class="form-check-label" for="especialidade4">
                     Outros
