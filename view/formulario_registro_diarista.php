@@ -125,6 +125,8 @@
         </fieldset>
     </div>
 
+    <br><br>
+
     <div class="form-floating">
         <textarea name="descricao" id="descricao" cols="30" rows="10" class="form-control"></textarea>
         <label for="descricao">Breve descrição sobre você (experiência de trabalho)</label>
@@ -133,17 +135,24 @@
     <!-- add user-type=diarista to send to php code -->
     <br>
     <div class="form-check">
-        <label for="publicar">Publicar seu perfil na pagina?</label>
+        <label for="is_public" data-bs-toggle="tooltip"
+            title="Você pode tornar o seu perfil público logo após o registro, assim os outros usuários terão como encontrá-lo.">Pretende
+            is_public seu perfil na página?</label>
         </br>
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="publicar" id="publicar" value="sim" checked>
-            Sim
-        </label>
-        </br>
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="publicar" id="publicar" value="nao">
-            Não
-        </label>
+
+        <div class="form-check form-check-inline">
+
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="is_public" id="is_public1" value="sim" checked>
+                Sim
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label form-check-inline">
+                <input type="radio" class="form-check-input" name="is_public" id="is_public2" value="nao">
+                Não
+            </label>
+        </div>
     </div>
     <hr>
     <div class="d-grid gap-2 col-6 mx-auto">
