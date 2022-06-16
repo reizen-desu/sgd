@@ -35,7 +35,7 @@
     <div class="row">
         <div class="form-group col">
             <label for="password">Senha</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+            <input type="password" class="form-control" id="password" name="password" placeholder="Senha"
                 onchange="validarSenha();" required>
         </div>
 
@@ -47,6 +47,25 @@
     </div>
 
     <br>
+
+    <div class="form-check">
+        <div class="col-1 col-form-label">Sexo</div>
+        <!-- <label for="publicar">Sexo: </label> -->
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexo" value="M" id="sexo1">
+            <label class="form-check-label" for="sexo1">
+                Masculino
+            </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexo" value="F" id="sexo2">
+            <label class="form-check-label" for="sexo2">
+                Feminimo
+            </label>
+        </div>
+    </div>
 
     <div class="row">
         <label for="data_nascimento" class="col-3 col-form-label">Data de nascimento</label>
@@ -71,7 +90,9 @@
     <!-- <label for="especialidade">Escolha sua especialidade(s)</label> -->
     <div class="form-group">
         <fieldset class="border p-2">
-            <legend class="float-none w-auto p-0 text-sm-center small">Especialidade</legend>
+            <legend class="float-none w-auto p-0 text-sm-center small" data-bs-toggle="tooltip"
+                title="Obs: a diarista pode ter mais de uma especialidade, desde que tenha experiência suficiente.">
+                Especialidade</legend>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade1">
                 <label class="form-check-label" data-bs-toggle="tooltip" data-bs-placement="right"
@@ -82,20 +103,23 @@
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade2">
-                <label class="form-check-label" for="especialidade2">
-                    Cozinheira
+                <label class="form-check-label" for="especialidade2" data-bs-toggle="tooltip"
+                    title="Para quem precisa de sua roupa lavada, seja por via manual ou por meio de máquina de lavar.">
+                    Lavar e secar
                 </label>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade3">
-                <label class="form-check-label" for="especialidade3">
+                <label class="form-check-label" for="especialidade3" data-bs-toggle="tooltip"
+                    title="A babá é quem fica resposável por tomar conta do bebé. É necessário um nível de responsabilidade devido.">
                     Babá
                 </label>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" value="" id="especialidade4">
-                <label class="form-check-label" for="especialidade4">
-                    Outros
+                <label class="form-check-label" for="especialidade4" data-bs-toggle="tooltip"
+                    title="O indivíduo colector de lixo é aquele responsável por remover o lixo acumulado de um determinado local.">
+                    Colecta de lixo
                 </label>
             </div>
         </fieldset>
@@ -103,7 +127,7 @@
 
     <div class="form-floating">
         <textarea name="descricao" id="descricao" cols="30" rows="10" class="form-control"></textarea>
-        <label for="descricao">Breve descrição sobre você</label>
+        <label for="descricao">Breve descrição sobre você (experiência de trabalho)</label>
     </div>
 
     <!-- add user-type=diarista to send to php code -->
