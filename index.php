@@ -16,16 +16,21 @@
     <!-- BACKGROUND IMAGE -->
     <div class="bg-image"></div>
 
-
+    <!-- HEADER -->
     <?php require_once 'view/navbar.php'; ?>
 
-    <!-- CONTEUDO DA PÁGINA -->
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <?php require_once 'view/cartas.php'; ?>
+    <!-- CONTEUDO DA PÁGINA -->
+    <br><br>
+
+    <!-- Telas para conteúdo Principal:
+        - Tela_diarista
+        - Tela_visitante
+        - Tela_comum (no login) -->
+
+
+    <?php require_once 'view/tela_principal.php'; ?>
+    <?php require_once 'view/tela_visitante.php'; ?>
 
     <!-- Formulario de login -->
     <?php require_once 'view/formulario_login.php'; ?>
