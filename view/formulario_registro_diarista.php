@@ -1,9 +1,9 @@
 <div class="text-muted">
-    O formulário abaixo se destina para diaristas, para entrar como visitante...
+    Registando como uma diarista, você poderá publicar seus serviços e receber pedidos de visitantes. <br>
 </div>
 
 <p class="text-secondary">Preencha os campos abaixo para se registrar</p>
-<form action="controller/registerController.php" method="POST">
+<form action="../controller/registerController.php" method="POST">
     <div class="row">
 
         <div class="form-group col">
@@ -156,6 +156,6 @@
     </div>
     <hr>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" class="btn btn-primary btn-block">Registrar nova conta</button>
+        <button type="submit" value="registar_diarista" class="btn btn-primary btn-block">Registrar nova conta</button>
     </div>
 </form>
