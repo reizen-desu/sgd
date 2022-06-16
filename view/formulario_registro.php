@@ -17,10 +17,13 @@
                 <ul class="nav nav-pills nav-justified" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="pill" href="#menu1" data-bs-toggle="tooltip"
-                            date-placement="left" title="Sou um visitante">Visitante</a>
+                            data-bs-placement="left"
+                            title="Caso você esteja procurando por uma diarista então é recomendado que você se registe como uma">Visitante</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="pill" href="#menu2">Diarista</a>
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu2" data-bs-toggle="tooltip"
+                            data-bs-placement="left"
+                            title="Se você pretende trabalhar como uma diarista então registe-se como uma.">Diarista</a>
                     </li>
                 </ul>
 
