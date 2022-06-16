@@ -1,5 +1,6 @@
 <div class="text-muted">
     Registando como um visitante, você poderá requisitar algum serviço à diaristas e poderá publicar seus serviços.
+    Preencha os campos abaixo para se registrar.
 </div>
 
 <form action="../controller/registerController.php">
