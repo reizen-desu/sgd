@@ -1,25 +1,34 @@
-<p>O formulário abaixo se destina para diaristas, para entrar como visitante </p>
+<div class="text-muted">
+    O formulário abaixo se destina para diaristas, para entrar como visitante...
+</div>
+
 <p class="text-secondary">Preencha os campos abaixo para se registrar</p>
 <form action="controller/registerController.php" method="POST">
     <div class="row">
 
         <div class="form-group col">
-            <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="nome" placeholder="Introduza seu nome" pattern="[^0-9]+"
-                required>
+            <div class="form-floating">
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required>
+                <label for="nome" class="form-label">Nome</label>
+            </div>
+            <!-- <input type="text" class="form-control" id="nome" placeholder="Introduza seu nome" pattern="[^0-9]+" required> -->
         </div>
 
         <div class="form-group col">
-            <label for="apelido">Apelido</label>
-            <input type="text" class="form-control" id="apelido" placeholder="Introduza seu apelido" pattern="[^0-9]+"
-                required>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Apelido" required>
+                <label for="apelido" class="form-label">Apelido</label>
+            </div>
+            <!-- <input type="text" class="form-control" id="apelido" placeholder="Introduza seu apelido" pattern="[^0-9]+" required> -->
         </div>
     </div>
 
-    <div class=" form-group">
-        <label for="emailLogin">Email</label>
+    <br>
+
+    <div class=" form-floating">
         <input type="email" class="form-control" id="emailLogin" name="emailLogin" placeholder="Introduza seu email"
             required>
+        <label for="emailLogin" class="form-label">Email</label>
     </div>
 
     <!-- A confirmacao da senha é controlado por uma script javascript -->
@@ -77,6 +86,11 @@
                 </label>
             </div>
         </fieldset>
+    </div>
+
+    <div class="form-floating">
+        <textarea name="descricao" id="descricao" cols="30" rows="10" class="form-control"></textarea>
+        <label for="descricao">Breve descrição sobre você</label>
     </div>
 
     <!-- add user-type=diarista to send to php code -->
