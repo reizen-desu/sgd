@@ -8,6 +8,7 @@ $pass = "";
 $db = "sgd";
 
 function conectar() {
+    global $host, $user, $pass, $db;
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
