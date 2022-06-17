@@ -3,7 +3,7 @@
 </div>
 
 <p class="text-secondary">Preencha os campos abaixo para se registrar</p>
-<form action="../controller/registerController.php" method="POST">
+<form action="controller/registerController.php" method="POST">
     <div class="row">
 
         <div class="form-group col">
@@ -26,9 +26,8 @@
     <br>
 
     <div class=" form-floating">
-        <input type="email" class="form-control" id="emailLogin" name="emailLogin" placeholder="Introduza seu email"
-            required>
-        <label for="emailLogin" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Introduza seu email" required>
+        <label for="email" class="form-label">Email</label>
     </div>
 
     <!-- A confirmacao da senha é controlado por uma script javascript -->
@@ -137,7 +136,7 @@
     <div class="form-check">
         <label for="is_public" data-bs-toggle="tooltip"
             title="Você pode tornar o seu perfil público logo após o registro, assim os outros usuários terão como encontrá-lo.">Pretende
-            is_public seu perfil na página?</label>
+            publicar seu perfil na página?</label>
         </br>
 
         <div class="form-check form-check-inline">
