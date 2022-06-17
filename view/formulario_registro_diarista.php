@@ -155,6 +155,6 @@
     </div>
     <hr>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" value="registar_diarista" class="btn btn-primary btn-block">Registrar nova conta</button>
+        <button type="submit" name="registar_diarista" class="btn btn-primary btn-block">Registrar nova conta</button>
     </div>
 </form>

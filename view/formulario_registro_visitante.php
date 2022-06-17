@@ -59,7 +59,7 @@
 
     <hr>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" value="registar_visitante" class="btn btn-primary btn-block">Registrar nova
+        <button type="submit" name="registar_visitante" class="btn btn-primary btn-block">Registrar nova
             conta</button>
     </div>
 </form>
