@@ -142,13 +142,13 @@
         <div class="form-check form-check-inline">
 
             <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="is_public" id="is_public1" value="sim" checked>
+                <input type="radio" class="form-check-input" name="is_public" id="is_public1" value="1" checked>
                 Sim
             </label>
         </div>
         <div class="form-check form-check-inline">
             <label class="form-check-label form-check-inline">
-                <input type="radio" class="form-check-input" name="is_public" id="is_public2" value="nao">
+                <input type="radio" class="form-check-input" name="is_public" id="is_public2" value="0">
                 Não
             </label>
         </div>
