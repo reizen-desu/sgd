@@ -18,7 +18,7 @@ if (isset($_POST['registar_diarista'])) {
     $descricao = $_POST['descricao'];
     $is_public = $_POST['is_public'];
 
-    $result = $pdo->prepare("INSERT INTO diarista (nome, apelido, email, password, data_nascimento, contacto, sexo, morada, descricao, is_public) VALUES (:nome, :apelido, :email, :password, :data_nascimento, :contacto, :sexo, :morada, :descricao, :is_public)");
+    $result = $pdo->prepare("INSERT INTO diarista (nome, apelido, email, password, data_nascimento, contacto, sexo, morada, descricao, is_public, data_criacao) VALUES (:nome, :apelido, :email, :password, :data_nascimento, :contacto, :sexo, :morada, :descricao, :is_public, NOW())");
     $result->bindParam(':nome', $nome);
     $result->bindParam(':apelido', $apelido);
     $result->bindParam(':email', $email);
@@ -40,7 +40,7 @@ if (isset($_POST['registar_diarista'])) {
 
 // Para registar o visitante
 if (isset($_POST['registar_visitante'])) {
-    $tipo_usuario = "visitante";
+    // $tipo_usuario = "visitante";
     $nome = $_POST['nome'];
     $apelido = $_POST['apelido'];
     $email = $_POST['email'];
