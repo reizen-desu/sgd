@@ -30,10 +30,10 @@
 
     <?php
 
-    if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
+    if (!isset($_SESSION['is_logged']) || $_SESSION['is_logged'] == false) {
         require_once 'view/tela_principal.php';
     } else {
-        if ($_SESSION['tipo_usuario'] == 'diarista') {
+        if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] == 'diarista') {
             require_once 'view/tela_diarista.php';
         } else {
             require_once 'view/tela_visitante.php';
