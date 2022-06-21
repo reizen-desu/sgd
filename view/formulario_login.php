@@ -28,7 +28,7 @@
             </div> <!-- modal body -->
             <div class="modal-footer">
                 <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="submit" form="loginForm" class="btn btn-primary">Entrar</button>
+                <button type="submit" name="login" form="loginForm" class="btn btn-primary">Entrar</button>
             </div>
 
         </div> <!-- modal content -->
