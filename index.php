@@ -28,9 +28,19 @@
         - Tela_visitante
         - Tela_comum (no login) -->
 
+    <?php
 
-    <?php require_once 'view/tela_principal.php'; ?>
-    <?php require_once 'view/tela_visitante.php'; ?>
+    if (!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] == false) {
+        require_once 'view/tela_principal.php';
+    } else {
+        if ($_SESSION['tipo_usuario'] == 'diarista') {
+            require_once 'view/tela_diarista.php';
+        } else {
+            require_once 'view/tela_visitante.php';
+        }
+    }
+
+    ?>
 
     <!-- Formulario de login -->
     <?php require_once 'view/formulario_login.php'; ?>
