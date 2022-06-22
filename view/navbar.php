@@ -1,14 +1,5 @@
 <!-- CABECALHO -->
 
-<!-- Testes -->
-<?php
-
-$_SESSION['is_logged'] = "1";
-$_SESSION['user'] = "diarista";
-
-?>
-<!-- Testes fim -->
-
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
@@ -36,7 +27,7 @@ $_SESSION['user'] = "diarista";
                 </li>
 
                 <!-- Mostar os items de registro/login caso ainda não tenha entrado no sistema -->
-                <?php if (isset($_SESSION['is_logged']) && $_SESSION['is_logged'] == "1") { ?>
+                <?php if (!isset($_SESSION['tipo_usuario'])) { ?>
                 <li class="nav-item">
                     <button class="mx-2 btn btn-outline-secondary" data-bs-toggle="modal"
                         data-bs-target="#register">Registar</button>
@@ -48,16 +39,18 @@ $_SESSION['user'] = "diarista";
 
                 <!-- Caso esteja logado, mostrar o nome e outras opções -->
                 <?php } else { ?>
-                <li class="nav-item dropdown btn-outline-primary">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <?php echo $_SESSION['user']; ?>
+                <li class="nav-item dropdown dropstart">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Perfil
                     </a>
-                    <div class="dropdown-menu dropdown-menu-end">
-                        <a href="#" class="dropdown-item">Perfil</a>
-                        <a href="#" class="dropdown-item">Definições</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item text-danger">Sair</a>
-                    </div>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Notificações</a></li>
+                        <li><a class="dropdown-item btn-danger text-danger" href="#"
+                                onclick="function hi(){window.location = 'controller/logout.php'};hi()">Sair</a>
+                        </li>
+                    </ul>
                 </li>
                 <!-- <li class="nav-item">
                     <button class="btn btn-primary" data-bs-toggle="modal"

@@ -1,4 +1,4 @@
-<?php include_once 'model/connection.php'; ?>
+<?php require 'model/connection.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +8,8 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 </head>
 
 <body>
@@ -21,23 +23,17 @@
 
 
     <!-- CONTEUDO DA PÁGINA -->
-    <br><br>
-
-    <!-- Telas para conteúdo Principal:
-        - Tela_diarista
-        - Tela_visitante
-        - Tela_comum (no login) -->
 
     <?php
 
-    if (!isset($_SESSION['is_logged']) || $_SESSION['is_logged'] == false) {
-        require_once 'view/tela_principal.php';
-    } else {
+    if (isset($_SESSION['tipo_usuario'])) {
         if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] == 'diarista') {
             require_once 'view/tela_diarista.php';
         } else {
             require_once 'view/tela_visitante.php';
         }
+    } else {
+        require_once 'view/tela_principal.php';
     }
 
     ?>
@@ -73,8 +69,11 @@
 
     <script src="assets/js/functions.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script>
     /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
     var prevScrollpos = window.pageYOffset;
