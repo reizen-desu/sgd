@@ -37,7 +37,7 @@ if (isset($_POST['login'])) {
     }
     
     if ($acerto == 1) {
-        $_SESSION['is_loggued'] = true;
+        $_SESSION['logado'] = 1;
         $_SESSION['id'] = $id;
         $_SESSION['email'] = $email;
         $_SESSION['tipo_usuario'] = $tipo_usuario;
