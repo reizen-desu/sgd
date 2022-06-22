@@ -1,7 +1,7 @@
 <?php
 
 $pdo = conectar();
-$diaristas = $pdo->query("SELECT * FROM diarista");
+$diaristas = $pdo->query("SELECT * FROM diarista WHERE is_public = 1");
 // $diaristas = execute();
 ?>
 
@@ -71,7 +71,9 @@ $diaristas = $pdo->query("SELECT * FROM diarista");
                             </tbody>
                         </table>
                     </div>
-                    <p class="card-text"><small class="text-muted">Último visto 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">Último visto em
+                            <? $diaristas['ultimo_acesso'] ?>
+                        </small></p>
                     <div class="btn-group">
                         <a href="diarista.php?id=<?= $diarista['id'] ?>" class="btn btn-primary">Requisitar</a>
                         <a href="diarista.php?id=<?= $diarista['id'] ?>" class="btn">

@@ -14,7 +14,17 @@
 
 .bg-image {
     min-height: 100%;
-    background-image: url("img/background.jpg");
+    background-image: url("assets/img/background.jpg");
+    background-color: white;
+    background-position: center end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+landing-page {
+    min-height: 100%;
+    background-color: #fafafa;
     background-position: center end;
     background-repeat: no-repeat;
     background-size: cover;

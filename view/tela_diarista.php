@@ -3,4 +3,11 @@
     - Notificacoes... (de visitantes)
     - Visualizacoes de perfil -->
 
-<h1>I am the diarista page</h1>
+<div class="text-center" style="height: 80vh;">
+
+    <h1>Tela da diarista</h1>
+    <ul>
+        <li>Ver as notificações de visitantes</li>
+        <li>Editar seu perfil</li>
+    </ul>
+</div>
