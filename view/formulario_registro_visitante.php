@@ -32,15 +32,16 @@
     <!-- A confirmacao da senha é controlado por uma script javascript -->
     <div class="row">
         <div class="form-group col">
-            <label for="password">Senha</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Senha"
-                onchange="validarSenha();" required>
+            <label for="password_visitante">Senha</label>
+            <input type="password" class="form-control" id="password_visitante" name="password_visitante"
+                placeholder="Senha" onchange="validarSenhaVisitante();" required>
         </div>
 
         <div class="form-group col">
-            <label for="confirm_password">Confirmar senha</label>
-            <input type="password" class="form-control" id="confirm_password" placeholder="Confirme a senha"
-                onkeyup="validarSenha();" required>
+            <label for="confirm_password_visitante">Confirmar senha</label>
+            <input type="password" class="form-control" id="confirm_password_visitante"
+                name="confirm_password_visitante" placeholder="Confirme a senha" onkeyup="validarSenhaVisitante();"
+                required>
         </div>
     </div>
 
