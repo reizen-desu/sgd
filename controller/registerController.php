@@ -9,7 +9,8 @@ if (isset($_POST['registar_diarista'])) {
     $nome = $_POST['nome'];
     $apelido = $_POST['apelido'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password_diarista = $_POST['password_diarista'];
+    $password = md5($password_diarista);
     // $password_confirm = $_POST['password_confirm'];
     $data_nascimento = $_POST['data_nascimento'];
     $contacto = $_POST['contacto'];
@@ -45,7 +46,8 @@ if (isset($_POST['registar_visitante'])) {
     $nome = $_POST['nome'];
     $apelido = $_POST['apelido'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password_visitante = $_POST['password_visitante'];
+    $password = md5($password_visitante);
     // $password_confirm = $_POST['password_confirm'];
     $contacto = $_POST['contacto'];
     $morada = $_POST['morada'];
