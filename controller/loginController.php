@@ -8,7 +8,7 @@ $pdo = conectar();
 
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
     $acerto = 0;
     $id = 0;
 
