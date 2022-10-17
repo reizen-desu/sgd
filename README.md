@@ -1,6 +1,7 @@
 # Sistema de Gestão de Diaristas
 
-This project is being rewritten in [Vue 3](https://github.com/reizen-desu/Vue-Gestao-de-Diaristas) for the frontend and Laravel for the backend.
+❗ <sub>This project is being rewritten in [Vue 3](https://github.com/reizen-desu/Vue-Gestao-de-Diaristas) for the frontend and Laravel for the backend.<sub>
+
 Este projecto está sendo reescrito em [Vue 3](https://github.com/reizen-desu/Vue-Gestao-de-Diaristas) para o frontend e Laravel para o backend.
 
 ## Sobre o projecto
