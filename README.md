@@ -1,5 +1,8 @@
 # Sistema de Gestão de Diaristas
 
+This project is being rewritten in [Vue 3](https://github.com/reizen-desu/Vue-Gestao-de-Diaristas) for the frontend and Laravel for the backend.
+Este projecto está sendo reescrito em [Vue 3](https://github.com/reizen-desu/Vue-Gestao-de-Diaristas) para o frontend e Laravel para o backend.
+
 ## Sobre o projecto
 
 O SGD é um sistema que possibilitará a gestão de diaristas. O sistema (no momento) irá se focar mais no utilizador diarista, onde poderá se cadastrar e publicar anúncios de acordo com a sua especialidade.
@@ -15,7 +18,6 @@ Um outro utilizador (visitante) poderá percorrer a lista de diaristas e caso te
 
 ## Guia de Inicialização
 
-O projecto foi desenvolvido no sistema operativo Windows.
 
 ### Pré-requisitos
 
